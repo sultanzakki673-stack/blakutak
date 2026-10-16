@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#page1" class="nav-logo">A Little Surprise</a>
+
+    <div class="nav-links">
+      <a href="#page1">Home</a>
+      <a href="#page2">Gallery</a>
+      <a href="#page3">For You</a>
+    </div>
+  </nav>
+
+  <!-- PAGE 1 -->
+  <section class="section hero-section" id="page1">
+    <video class="background-video" autoplay muted loop playsinline>
+      <source src="assets/background.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <div class="section-content">
+      <p class="eyebrow">WELCOME TO MY LITTLE WORLD</p>
+      <h1>A Little Place<br>Made for You<span>.</span></h1>
+      <p class="description">
+        A small collection of moments and something special for you.
+      </p>
+      <a href="#page2" class="main-button">See More</a>
+    </div>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="section gallery-section" id="page2">
+    <video class="background-video" autoplay muted loop playsinline>
+      <source src="assets/background2.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <div class="section-content gallery-content">
+      <p class="eyebrow">A COLLECTION OF MOMENTS</p>
+      <h2>Little Things<span>.</span></h2>
+      <p class="description">
+        Some little things that deserve to be remembered.
+      </p>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="assets/foto1.jpg" alt="Foto kenangan 1">
+          <h3>Memories</h3>
+          <p>Moments worth keeping.</p>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/foto2.jpg" alt="Foto kenangan 2">
+          <h3>Happiness</h3>
+          <p>Little things that make us smile.</p>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/foto3.jpg" alt="Foto kenangan 3">
+          <h3>Dreams</h3>
+          <p>Things to look forward to.</p>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/foto4.jpg" alt="Foto kenangan 4">
+          <h3>Moments</h3>
+          <p>Time spent together.</p>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/foto5.jpg" alt="Foto kenangan 5">
+          <h3>Stories</h3>
+          <p>Stories that stay with us.</p>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/foto6.jpg" alt="Foto kenangan 6">
+          <h3>Something Special</h3>
+          <p>A little surprise awaits.</p>
+        </div>
+      </div>
+
+      <a href="#page3" class="main-button">One More Thing ↓</a>
+    </div>
+  </section>
+
+ 
+<!-- PAGE 3 -->
+<section class="section flower-section" id="page3">
+
+  <!-- Background baru muncul setelah hadiah diklik -->
+  <video
+    class="background-video page3-background"
+    id="page3Background"
+    muted
+    loop
+    playsinline
+  >
+    <source src="assets/background3.mp4" type="video/mp4">
+  </video>
+
+  <div class="video-overlay page3-overlay"></div>
+
+  <div class="section-content flower-content">
+    <p class="eyebrow">A LITTLE SURPRISE</p>
+    <h2>Something for You<span>.</span></h2>
+
+    <p class="description">
+      There is something special inside this box.
+    </p>
+
+    <div class="gift-container">
+
+      <button class="gift-box" id="giftBox" type="button">
+        <span class="gift-icon">🎁</span>
+        <span class="gift-label">Click to open</span>
+      </button>
+
+      <div class="flower-result" id="flowerResult" hidden>
+        <img
+          src="assets/bunga.png"
+          alt="Bunga untukmu"
+          class="flower-image"
+        >
+
+        <h3>Flowers for You</h3>
+        <p>Semoga harimu selalu indah seperti bunga ini.</p>
+
+        <button class="reset-gift" id="resetGift" type="button">
+          Open Again ↻
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+<script src="./script.js"></script>
+</body>
+</html>
